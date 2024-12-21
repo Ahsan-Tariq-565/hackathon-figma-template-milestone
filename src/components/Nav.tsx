@@ -1,10 +1,11 @@
 import React from "react";
 
-const Nav = () => {
+export default function Nav() {
   return (
+
     <nav className="bg-[#FBEBB5] px-6 py-4">
       <div className="flex items-center justify-between">
-        <div className="text-lg font-bold text-black">M.Huzaifa</div>
+        <div className="text-lg font-bold text-black">Muhammad Ahsan Tariq</div>
         <div className="hidden md:flex space-x-14 ml-20 items-center justify-center w-full">
           <a className="text-sm font-medium text-center" href="/">
             Home
@@ -12,7 +13,7 @@ const Nav = () => {
           <a className="text-sm font-medium text-center" href="/shop">
             Shop
           </a>
-          <a className="text-sm font-medium text-center" href="/about">
+          <a className="text-sm font-medium text-center" href="/blog">
             About
           </a>
           <a className="text-sm font-medium text-center" href="/contact">
@@ -60,7 +61,7 @@ const Nav = () => {
               <span className="sr-only">Search</span>
             </button>
           </a>
-          <a href="/heart">
+          <a href="/product">
             <button className="p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -138,6 +139,4 @@ const Nav = () => {
       </div>
     </nav>
   );
-};
-
-export default Nav;
+}
